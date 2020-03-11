@@ -1,13 +1,15 @@
 #include <stdio.h>
-
-char chcase(char c){
-  // This function changes a case of a character using ASCII table pattern
-  return c ^ 32;
-}
-
-int main(void){
-	char c;
-	scanf("%c", &c);
-	printf("The opposite case of %c is %c\n", c,  chcase(c));
-	return 0;
+ 
+int main()
+{
+  int c, n, f = 1;
+ 
+  printf("Enter a number to calculate its factorial\n");
+  scanf("%d", &n);
+  for (c = 1; c <= n; c++)
+    f = f * c;
+ 
+  printf("Factorial of %d = %d\n", n, f);
+ 
+  return 0;
 }
